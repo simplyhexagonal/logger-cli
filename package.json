@@ -1,0 +1,66 @@
+{
+  "name": "@simplyhexagonal/logger-cli",
+  "version": "0.0.1",
+  "description": "CLI wrapper for @simplyhexagonal/logger",
+  "contributors": [
+    {
+      "name": "Jean M. Lescure",
+      "email": "opensource@jeanlescure.io",
+      "url": "http://jeanlescure.io/"
+    }
+  ],
+  "files": [
+    "dist",
+    "bin",
+    "package.json"
+  ],
+  "bin": {
+    "logger.config": "bin/config",
+    "logger.debug": "bin/logger",
+    "logger.info": "bin/logger",
+    "logger.warn": "bin/logger",
+    "logger.error": "bin/logger",
+    "logger.fatal": "bin/logger",
+    "logger.all": "bin/logger",
+    "logger.raw": "bin/logger"
+  },
+  "scripts": {
+    "dev": "./scripts/dev",
+    "test": "./scripts/test",
+    "build": "./scripts/build",
+    "local": "./scripts/local",
+    "release": "release-it"
+  },
+  "release-it": {
+    "git": {
+      "changelog": "auto-changelog --stdout -l false -u -t ./assets/changelog-compact.hbs"
+    },
+    "hooks": {
+      "after:bump": "./scripts/release"
+    },
+    "npm": {
+      "publish": false
+    }
+  },
+  "author": "Jean M. Lescure",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.11.4",
+    "auto-changelog": "^2.3.0",
+    "esbuild": "^0.13.9",
+    "jest": "^27.3.1",
+    "refup": "^1.1.0",
+    "release-it": "^14.11.6",
+    "ts-jest": "^27.0.7",
+    "ts-node": "^10.4.0",
+    "ts-node-dev": "^1.1.8",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "@simplyhexagonal/logger": "^2.0.0",
+    "@simplyhexagonal/logger-transport-discord": "^3.1.1",
+    "dotenv": "^11.0.0"
+  }
+}

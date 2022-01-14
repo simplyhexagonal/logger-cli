@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+MODULE_NAME=logger
+
+rm -rf dist/*
+esbuild src/index.ts --bundle --platform=node \
+  --external:@dotenv \
+  --external:@simplyhexagonal/logger \
+  --external:@simplyhexagonal/logger-transport-discord \
+  --outfile=dist/$MODULE_NAME.js --sourcemap \
+  || exit 1

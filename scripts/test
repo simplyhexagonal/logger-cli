@@ -1,0 +1,13 @@
+#! /usr/bin/env bash
+
+pnpm local
+
+logger.config $(pwd)/logger.mock.config.js \
+  && logger.debug This is a debug message \
+  && logger.info This message goes to Discord \
+  && logger.warn This is a warn message \
+  && logger.error This is a error message \
+  && logger.fatal This is a fatal message \
+  && uname -a | logger.all \
+  && logger.raw This is a raw message \
+  || exit 1
