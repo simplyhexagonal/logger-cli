@@ -94,7 +94,7 @@ var require_main = __commonJS({
 });
 
 // package.json
-var version = "1.0.0";
+var version = "1.0.1";
 
 // src/index.ts
 var import_path = __toModule(require("path"));
@@ -121,7 +121,14 @@ var getInput = () => {
   });
 };
 (async () => {
-  const config = require((0, import_path.resolve)(__dirname, "../logger.config.js"));
+  let config;
+  try {
+    config = require((0, import_path.resolve)(__dirname, "../logger.config.js"));
+  } catch (e) {
+    config = {
+      transports: {}
+    };
+  }
   const logger = new import_logger.default({
     optionsByLevel: {
       warn: [],
