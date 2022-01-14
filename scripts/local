@@ -2,5 +2,5 @@
 
 ./scripts/build \
 && pnpm pack \
-&& npm install -g $(ls *.tgz)
+&& pnpm add ./$(ls *.tgz)
 rm -f *.tgz

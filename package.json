@@ -16,13 +16,13 @@
   ],
   "bin": {
     "logger.config": "bin/config",
-    "logger.debug": "bin/logger",
-    "logger.info": "bin/logger",
-    "logger.warn": "bin/logger",
-    "logger.error": "bin/logger",
-    "logger.fatal": "bin/logger",
-    "logger.all": "bin/logger",
-    "logger.raw": "bin/logger"
+    "logger.debug": "bin/logger.debug",
+    "logger.info": "bin/logger.info",
+    "logger.warn": "bin/logger.warn",
+    "logger.error": "bin/logger.error",
+    "logger.fatal": "bin/logger.fatal",
+    "logger.all": "bin/logger.all",
+    "logger.raw": "bin/logger.raw"
   },
   "scripts": {
     "dev": "./scripts/dev",

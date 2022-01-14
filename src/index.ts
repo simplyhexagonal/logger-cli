@@ -60,7 +60,7 @@ type LogLevel = 'debug' | 'info' | 'warn' | 'error' | 'fatal' | 'all' | 'raw';
     }
   );
 
-  const binArgIdx = process.argv.findIndex((arg) => (/bin\/logger\./).test(arg));
+  const binArgIdx = process.argv.findIndex((arg) => (/logger\./).test(arg));
 
   if (binArgIdx === process.argv.length - 1) {
     await getInput();

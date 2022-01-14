@@ -9,3 +9,19 @@ esbuild src/index.ts --bundle --platform=node \
   --external:@simplyhexagonal/logger-transport-discord \
   --outfile=dist/$MODULE_NAME.js --sourcemap \
   || exit 1
+
+rm -f bin/logger.debug
+rm -f bin/logger.info
+rm -f bin/logger.warn
+rm -f bin/logger.error
+rm -f bin/logger.fatal
+rm -f bin/logger.all
+rm -f bin/logger.raw
+
+cp bin/logger bin/logger.debug
+cp bin/logger bin/logger.info
+cp bin/logger bin/logger.warn
+cp bin/logger bin/logger.error
+cp bin/logger bin/logger.fatal
+cp bin/logger bin/logger.all
+cp bin/logger bin/logger.raw

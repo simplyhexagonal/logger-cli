@@ -45,13 +45,17 @@ Please consider:
 ## Install
 
 ```sh
-pnpm i -g @simplyhexagonal/logger-cli
-
-# or
-yarn add -g @simplyhexagonal/logger-cli
-
-# or
+# recommended global install
 npm install -g @simplyhexagonal/logger-cli
+
+# or as project dependency
+pnpm i @simplyhexagonal/logger-cli
+
+# or
+yarn add @simplyhexagonal/logger-cli
+
+# or
+npm install @simplyhexagonal/logger-cli
 ```
 
 ## Usage
