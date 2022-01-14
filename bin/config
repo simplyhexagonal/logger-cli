@@ -1,10 +1,6 @@
 #!/usr/bin/env bash
 
-if [ "$(uname -s)" = 'Linux' ]; then
-  LOGGER_PATH="$(dirname "$(readlink -f "$0")")"
-else
-  LOGGER_PATH="$(dirname "$(readlink "$0")")"
-fi
+LOGGER_PATH="$(dirname "$(readlink -f "$0" || echo "$argv0")")"
 
 echo $LOGGER_PATH
 
