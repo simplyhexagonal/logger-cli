@@ -22,6 +22,7 @@ dependencies:
   '@simplyhexagonal/logger': 2.0.0
   '@simplyhexagonal/logger-transport-discord': 3.1.1_@simplyhexagonal+logger@2.0.0
   dotenv: 11.0.0
+  readlink: 3.0.0
 
 devDependencies:
   '@types/jest': 27.0.2
@@ -29,7 +30,6 @@ devDependencies:
   auto-changelog: 2.3.0
   esbuild: 0.13.9
   jest: 27.3.1_ts-node@10.4.0
-  readlink: 3.0.0
   refup: 1.1.0
   release-it: 14.11.6
   ts-jest: 27.0.7_2c4ca6574207836d1023f54689cc81ac
@@ -3296,7 +3296,6 @@ packages:
 
   /neo-async/2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
-    dev: true
 
   /new-github-release-url/1.0.0:
     resolution: {integrity: sha512-dle7yf655IMjyFUqn6Nxkb18r4AOAkzRcgcZv6WZ0IqrOH4QCEZ8Sm6I7XX21zvHdBeeMeTkhR9qT2Z0EJDx6A==}
@@ -3663,7 +3662,7 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       neo-async: 2.6.2
-    dev: true
+    dev: false
 
   /rechoir/0.6.2:
     resolution: {integrity: sha1-hSBLVNuoLVdC4oyWdW70OvUOM4Q=}
