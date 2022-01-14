@@ -135,11 +135,9 @@ module.exports = {
 };
 ```
 
-This configuration file will be symlinked to the origin directory of the logger-cli package. This means
-that if you are running logger from the "global" node context, everywhere on your system that you
-logger-cli commands, you will be able to use the same configuration file. On the other hand, if you
-install logger-cli as a dependency to a project, only that project will be able to use the config
-file (as long as the logger-cli command being run is located in the projects `node_modules` directory).
+This configuration file will be symlinked to `~/.config/logger/logger.config.js`. This means
+that everywhere on your system that you logger-cli commands, you will be able to use the same
+configuration.
 
 As you can see in the example above, you can also define environment variables and they will be
 used by @simplyhexagonal/logger-cli.

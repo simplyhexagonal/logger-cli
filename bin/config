@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 
-LOGGER_PATH="$(dirname "$(readlink-cli "$0")")"
+mkdir -p ~/.config/logger/
 
-echo $LOGGER_PATH
+rm -f ~/.config/logger/logger.config.js
 
-rm -f $LOGGER_PATH/../logger.config.js
-
-ln -s $1 $LOGGER_PATH/../logger.config.js
+ln -s $1 ~/.config/logger/logger.config.js
