@@ -3,6 +3,7 @@ require('dotenv').config();
 // @ts-ignore
 import { version } from '../package.json';
 
+import os from 'os';
 import { resolve } from 'path';
 import Logger, {
   LoggerTransportName,
@@ -42,7 +43,7 @@ type LogLevel = 'debug' | 'info' | 'warn' | 'error' | 'fatal' | 'all' | 'raw';
   let config: LoggerOptions;
 
   try {
-    config = require(resolve(__dirname, '../logger.config.js')) as LoggerOptions;
+    config = require(resolve(os.homedir(), '.config/logger/logger.config.js')) as LoggerOptions;
   } catch (e) {
     config = {
       transports: {},

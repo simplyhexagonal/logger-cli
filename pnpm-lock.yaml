@@ -9,7 +9,6 @@ specifiers:
   dotenv: ^11.0.0
   esbuild: ^0.13.9
   jest: ^27.3.1
-  readlink-cli: ^1.0.0
   refup: ^1.1.0
   release-it: ^14.11.6
   ts-jest: ^27.0.7
@@ -22,7 +21,6 @@ dependencies:
   '@simplyhexagonal/logger': 2.0.0
   '@simplyhexagonal/logger-transport-discord': 3.1.1_@simplyhexagonal+logger@2.0.0
   dotenv: 11.0.0
-  readlink-cli: 1.0.0
 
 devDependencies:
   '@types/jest': 27.0.2
@@ -3296,6 +3294,7 @@ packages:
 
   /neo-async/2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
+    dev: true
 
   /new-github-release-url/1.0.0:
     resolution: {integrity: sha512-dle7yf655IMjyFUqn6Nxkb18r4AOAkzRcgcZv6WZ0IqrOH4QCEZ8Sm6I7XX21zvHdBeeMeTkhR9qT2Z0EJDx6A==}
@@ -3656,20 +3655,6 @@ packages:
     dependencies:
       picomatch: 2.3.0
     dev: true
-
-  /readlink-cli/1.0.0:
-    resolution: {integrity: sha512-i0sP7BsNcu2DM0BLZGo9TjzYH3TaL0aiPhpeFbaqpJRK8yQG+Ku95UL3QgFX23yrx6wybwEulX/9PvNdcsHxew==}
-    hasBin: true
-    dependencies:
-      readlink: 3.0.0
-    dev: false
-
-  /readlink/3.0.0:
-    resolution: {integrity: sha512-qIEBhWRsih8v/hYNFCajcNwlgXFIhCO9njdkrIg3pvLGsw7BFqXb8PL7nY0v3TX5PNhGkegUXJb/wN5u4QvnDQ==}
-    engines: {node: '>=10'}
-    dependencies:
-      neo-async: 2.6.2
-    dev: false
 
   /rechoir/0.6.2:
     resolution: {integrity: sha1-hSBLVNuoLVdC4oyWdW70OvUOM4Q=}
