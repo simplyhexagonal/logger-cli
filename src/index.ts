@@ -39,7 +39,15 @@ const getInput = () => {
 type LogLevel = 'debug' | 'info' | 'warn' | 'error' | 'fatal' | 'all' | 'raw';
 
 (async () => {
-  const config = require(resolve(__dirname, '../logger.config.js')) as LoggerOptions;
+  let config: LoggerOptions;
+
+  try {
+    config = require(resolve(__dirname, '../logger.config.js')) as LoggerOptions;
+  } catch (e) {
+    config = {
+      transports: {},
+    };
+  }
 
   const logger = new Logger(
     {
