@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-LOGGER_PATH="$(dirname "$(node -e "console.log(require('readlink').sync(\"$0\"))")")"
+LOGGER_PATH="$(dirname "$(readlink-cli "$0")")"
 
 echo $LOGGER_PATH
 

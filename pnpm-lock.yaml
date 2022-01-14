@@ -9,7 +9,7 @@ specifiers:
   dotenv: ^11.0.0
   esbuild: ^0.13.9
   jest: ^27.3.1
-  readlink: ^3.0.0
+  readlink-cli: ^1.0.0
   refup: ^1.1.0
   release-it: ^14.11.6
   ts-jest: ^27.0.7
@@ -22,7 +22,7 @@ dependencies:
   '@simplyhexagonal/logger': 2.0.0
   '@simplyhexagonal/logger-transport-discord': 3.1.1_@simplyhexagonal+logger@2.0.0
   dotenv: 11.0.0
-  readlink: 3.0.0
+  readlink-cli: 1.0.0
 
 devDependencies:
   '@types/jest': 27.0.2
@@ -3656,6 +3656,13 @@ packages:
     dependencies:
       picomatch: 2.3.0
     dev: true
+
+  /readlink-cli/1.0.0:
+    resolution: {integrity: sha512-i0sP7BsNcu2DM0BLZGo9TjzYH3TaL0aiPhpeFbaqpJRK8yQG+Ku95UL3QgFX23yrx6wybwEulX/9PvNdcsHxew==}
+    hasBin: true
+    dependencies:
+      readlink: 3.0.0
+    dev: false
 
   /readlink/3.0.0:
     resolution: {integrity: sha512-qIEBhWRsih8v/hYNFCajcNwlgXFIhCO9njdkrIg3pvLGsw7BFqXb8PL7nY0v3TX5PNhGkegUXJb/wN5u4QvnDQ==}
