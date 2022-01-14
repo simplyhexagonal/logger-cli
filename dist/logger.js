@@ -94,7 +94,7 @@ var require_main = __commonJS({
 });
 
 // package.json
-var version = "1.0.2";
+var version = "1.1.0";
 
 // src/index.ts
 var import_path = __toModule(require("path"));
