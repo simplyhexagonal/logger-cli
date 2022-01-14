@@ -25,7 +25,7 @@ var require_main = __commonJS({
   "node_modules/.pnpm/dotenv@11.0.0/node_modules/dotenv/lib/main.js"(exports2, module2) {
     var fs = require("fs");
     var path = require("path");
-    var os = require("os");
+    var os2 = require("os");
     function log(message) {
       console.log(`[dotenv][DEBUG] ${message}`);
     }
@@ -60,7 +60,7 @@ var require_main = __commonJS({
       return obj;
     }
     function resolveHome(envPath) {
-      return envPath[0] === "~" ? path.join(os.homedir(), envPath.slice(1)) : envPath;
+      return envPath[0] === "~" ? path.join(os2.homedir(), envPath.slice(1)) : envPath;
     }
     function config(options) {
       let dotenvPath = path.resolve(process.cwd(), ".env");
@@ -94,9 +94,10 @@ var require_main = __commonJS({
 });
 
 // package.json
-var version = "1.1.0";
+var version = "1.1.1";
 
 // src/index.ts
+var import_os = __toModule(require("os"));
 var import_path = __toModule(require("path"));
 var import_logger = __toModule(require("@simplyhexagonal/logger"));
 var import_logger_transport_discord = __toModule(require("@simplyhexagonal/logger-transport-discord"));
@@ -123,7 +124,7 @@ var getInput = () => {
 (async () => {
   let config;
   try {
-    config = require((0, import_path.resolve)(__dirname, "../logger.config.js"));
+    config = require((0, import_path.resolve)(import_os.default.homedir(), ".config/logger/logger.config.js"));
   } catch (e) {
     config = {
       transports: {}
