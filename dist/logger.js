@@ -94,7 +94,7 @@ var require_main = __commonJS({
 });
 
 // package.json
-var version = "1.1.1";
+var version = "1.2.0";
 
 // src/index.ts
 var import_os = __toModule(require("os"));
