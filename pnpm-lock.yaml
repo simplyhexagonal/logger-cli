@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@simplyhexagonal/logger': ^2.0.0
-  '@simplyhexagonal/logger-transport-discord': ^3.1.1
+  '@simplyhexagonal/logger-transport-discord': ^3.1.2
   '@types/jest': ^27.0.2
   '@types/node': ^16.11.4
   auto-changelog: ^2.3.0
@@ -19,7 +19,7 @@ specifiers:
 
 dependencies:
   '@simplyhexagonal/logger': 2.0.0
-  '@simplyhexagonal/logger-transport-discord': 3.1.1_@simplyhexagonal+logger@2.0.0
+  '@simplyhexagonal/logger-transport-discord': 3.1.2_@simplyhexagonal+logger@2.0.0
   dotenv: 11.0.0
 
 devDependencies:
@@ -722,8 +722,8 @@ packages:
       '@octokit/openapi-types': 11.2.0
     dev: true
 
-  /@simplyhexagonal/logger-transport-discord/3.1.1_@simplyhexagonal+logger@2.0.0:
-    resolution: {integrity: sha512-QNGZYhWXvCHyJBs2zqL1rI78gQ/fxtigdY6GcxGwRzM2c/gxz2v+T3W3QCbPq6tG8UUS2Ru0BBt/GxtEeqbnGQ==}
+  /@simplyhexagonal/logger-transport-discord/3.1.2_@simplyhexagonal+logger@2.0.0:
+    resolution: {integrity: sha512-R6qzLJQM++JETJngyqbJu8QMgDJcyFDjYeowGN0C0mMl9iInSuO4B06uTR14jNXi8RBfsnettBX5V/JoB7xlrA==}
     peerDependencies:
       '@simplyhexagonal/logger': ^2.0.0
     dependencies:

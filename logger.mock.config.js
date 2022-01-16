@@ -1,27 +1,20 @@
 const os = require('os');
 
+const discordConfig = {
+  transport: 'discord',
+  options: {
+    destination: (process.env.DISCORD_WEBHOOK || ''),
+  },
+};
+
 module.exports = {
   optionsByLevel: {
     warn: [],
-    info: [
-      {
-        transport: 'discord',
-        options: {
-          destination: (process.env.DISCORD_WEBHOOK || ''),
-        },
-      },
-    ],
+    info: [discordConfig],
     debug: [],
     error: [],
     fatal: [],
-    all: [
-      {
-        transport: 'discord',
-        options: {
-          destination: (process.env.DISCORD_WEBHOOK || ''),
-        },
-      },
-    ],
+    all: [discordConfig],
     raw: [],
   },
   appIdentifiers: {

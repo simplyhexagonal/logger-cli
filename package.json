@@ -60,7 +60,7 @@
   },
   "dependencies": {
     "@simplyhexagonal/logger": "^2.0.0",
-    "@simplyhexagonal/logger-transport-discord": "^3.1.1",
+    "@simplyhexagonal/logger-transport-discord": "^3.1.2",
     "dotenv": "^11.0.0"
   }
 }
